@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+<style>
+  img {
+    width: 80px;
+    height: 80px;
+  }
+  body{
+    background:url(pic3.JPG);
+  }
+  a{
+    font-size: 20px;
+    color: #000;
+  }
+  h1{
+    font-size: 30px ;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(86, 148, 72);
+    margin: 30px;
+      
+    text-transform: uppercase;
+    background-color: rgba(255, 255, 255, 0.836);
+  }
+  #head{
+                background-image: url(pic4.JPG) ;
+                border: 1px ridge rgb(0, 0, 0) ;
+                margin: 0 auto;
+                width: auto;
+                height: 100px;
+            }
+            #searchBox{
+                float:right;
+                padding: 40px;
+                margin: 0px 20px;
+  
+}
+footer{
+  background-color: lightslategrey;
+}
+
+</style>
+
+ <body class="container">
+  <div id="head1">
+    <div id="searchBox" class=""col-lg-4>
+        <input  type="text" name="searchBar" id="searchBar" placeholder="search for an items">
+        <input type="submit" id="submit" name="submit" value="Search" onclick="sub()">
+</div>
+    <div id=head>
+<h1> Ming’s Diner Restaurant</h1></div>
+</div>
+<br>
+      <div class="container">
+        <div class="row">
+                 <a href="dashboard.html">Home |</a>
+                 <a href="register.html" >User Register |</a>
+                 <a href="login.html"  >User Login</a>
+                 <br><br>
+              <u1 class="nav nav-tabs">
+                  <li ><a href="#items" data-toggle="tab">Items <span class="glyphicon glyphicon-play"></span></a></li>
+                  <li><a href="#basket" data-toggle="tab">Basket <span class="glyphicon glyphicon-shopping-cart"></span></a></li>
+                  <li><a href="#order" data-toggle="tab">Bestsellers</a></li>
+                  <li><a href="#history" data-toggle="tab">Order details</a></li>
+                  <li><a href="#myself" data-toggle="tab">About us</a></li>
+                 
+              </u1>
+                 <div class="tab-content ">
+                 <div id="items" class="tab-pane fade">
+                   <table border="1px">
+                     <tr>
+                       <td>soup</td>
+                       <td>salad</td>
+                       <td>Pasta</td>
+                       <td>Cake</td>
+                       <td>sandwaiches</td>
+                       
+                     </tr>
+                     <tr>
+                       <td><img src="soup.JPG"></td>
+                       <td><img src="salad.JPG"></td>
+                       <td><img src="pasta.JPG"></td>
+                       <td><img src="cake.JPG"></td>
+                       <td><img src="sand.JPG"></td>
+                       
+                     </tr>
+                     <tr>
+                       <td>price $2.49 /G</td>
+                       <td>price $2.49 /G</td>
+                       <td>price $5.49 /G</td>
+                       <td>price $4.49 /G</td>
+                       <td>price $1.00 /G</td>
+                       
+
+                     </tr>
+                     <tr>
+                       <td>
+                        count : <input type="number">
+                       </td>
+                       <td>
+                        count : <input type="number">
+                       </td>
+                       <td>
+                        count : <input type="number">
+                       </td>
+                       <td>
+                        count : <input type="number">
+                       </td>
+                       <td>
+                        count : <input type="number">
+                       </td>
+                       
+                     </tr>
+                     <tr>
+                       <td><input type="submit" class="btn btn-primary" value="ADD"></button></td>
+                       <td><input type="submit" class="btn btn-primary" value="ADD"></button></td>
+                       <td><input type="submit" class="btn btn-primary" value="ADD"></button></td>
+                       <td><input type="submit" class="btn btn-primary" value="ADD"></button></td>
+                       <td><input type="submit" class="btn btn-primary" value="ADD"></button></td>
+                       
+                     </tr>
+                   </table>
+                 </div>
+                         
+                        
+                 <div id="order" class="tab-pane fade">
+                      <h1> Bestsellers</h1>
+                      <ol>
+                         <li>Soup</li>
+                         <li>Cake</li>
+                    
+          
+                     </ol>
+                   </div>
+                <div id="history" class="tab-pane fade">
+                   <h1>Order History</h1>
+                   <div class="row">
+                   <div class="col-lg-3">
+                     <ul class="list-group">
+                     <li class="list-group-item">soup 2</li>
+                     <li class="list-group-item">cake 2</li>
+                     <li class="list-group-item">pasta 2</li>
+                     <li class="list-group-item">salad
+                         <span class="badge">Order pending</span></li>
+                     </ul>
+                     </div>
+                    </div>
+                  </div>
+
+                  
+                  
+         
+           <div id="basket" class="tab-pane fade">
+
+             <h1>Basket</h1>
+               <table class="table table-hover table-bordered ">
+                 <thead>
+                         <tr>
+                          <th>#</th>
+                           <th>Item Name</th>
+                           <th>Price</th>
+                           <th>Count</th>
+
+                        </tr>
+                     </thead>
+                      <tbody>
+                       <tr>
+                        <td>#</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                       </tr>
+                      <tr>
+                       <td>#</td>
+                       <td>2</td>
+                       <td>2</td>
+                       <td>1</td>
+                       </tr>
+                       <tr>
+                         <td>total</td>
+                         <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                       </tr>
+                 </tbody>
+             </table>
+             <div class="col-md-10">
+              <div class="" id="table"></div>
+          </div>
+          <div class="col-md-12">
+              <div class="row justify-content-center">
+                  <div class="text-center">
+                      <h1>Pay </h1>
+                  </div>
+             <div class="col-md-4">
+                 <div class="card">
+                     <div class="card-body">
+                         <form>
+                            <div class="form-group">
+                              <input type="text" placeholder="Name" class="form-control">
+                            </div>
+                            <div class="form-group">
+                              <input type="text" placeholder="Number Card" class="form-control">
+                            </div>
+                            <div class="form-group">
+                             <div class="row">
+                                 <div class="col-md-4">
+                                  <input type="text" placeholder="CCV" class="form-control">
+                                 </div>
+                                 <div class="col-md-4 offset-1">
+                                  <input type="text" placeholder="mm/yy" class="form-control">
+                                 </div>
+                             </div>
+                            </div>
+                            <div class="form-group text-center">
+                              <input type="submit" value="Pay" class="btn btn-success">
+                            </div>
+                         </form>
+                     </div>
+                 </div>
+             </div>
+              </div>
+          </div>
+
+            </div>
+            <div id="myself" class="tab-pane fade">
+              <p> 
+                <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">About Me</a> 
+                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">About My Company</button> 
+                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">About Us</button> 
+              </p> 
+              <div class="row"> 
+                <div class="col-lg-4"> 
+                  <div class="collapse multi-collapse" id="multiCollapseExample1"> 
+                    <div class="card card-body"> 
+                     This is Maha, having 15 years of training experience, i can teach complete .NET, .NET Core,Angular, REact, etc., 
+                    </div> 
+                  </div> 
+                </div> 
+                <div class="col-lg-4"> 
+                  <div class="collapse multi-collapse" id="multiCollapseExample2">  
+              
+             
+                    <div class="card card-body"> 
+                My company at USA and  started recently and have good number of Food and staff ready available.        
+                <br/> 
+                My company has no branches yet 
+                    </div> 
+                  </div> 
+                </div> 
+              </div> 
+              Contact the restaurant<textarea></textarea>
+              <input type="submit" value="submit">
+              </div> 
+          </div>
+         </div> 
+       </div>
+       <footer>
+        <h4>By Maha Alqarni 2021 &copy; </h4>  
+       </footer>
+   </body>
